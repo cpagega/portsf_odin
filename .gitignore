@@ -1,0 +1,13 @@
+.vs/
+*.obj
+*.ilk
+*.exe
+*.dll
+*.exp
+*.log
+
+x64/
+Win32/
+Debug/
+Release/
+.vscode/
