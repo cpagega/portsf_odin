@@ -252,7 +252,7 @@ foreign lib {
     // it's not documented in the original c header what the return value is but i'll assume 0 or some error.
     // note: peaktime isn't always valid, it's simple to calculate directly (peakdata.pos / sample rate).
     ReadPeaks           :: proc(sfd: c.int,
-                                peakdata: []PSF_CHPEAK,
+                                peakdata: [^]PSF_CHPEAK,
                                 peaktime: ^c.long) -> c.int ---
 
     // set/unset dither.
